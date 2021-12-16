@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 10px 0px 0px 10px;
+	padding: 0;
+	font-family: 'Rubik' , sans-serif;
+}
+::selection {
+	color: #fff;
+	background-color: #000;
+}
+header {
+	height: 100px;
+}
+.info {
+	position: relative;
+	margin: 0px 0px 0px 40px;
+	padding: 0;
+}
+img[src*="Fahm.jpg"] {
+	width: 120px;
+	height: 130px;
+	border-radius: 50%;
+}
+h2 {
+
+}
+h2::after {
+	content: "";
+	position: absolute;
+	height: 8px;
+	width: 5%;
+	border-radius: 4px;
+	background-color: #4b6cc1;
+	bottom: -15px;
+	left: 0;
+	font-weight: 400;
+}
+.navmenu {
+	margin: 0;
+	/*float: left;*/
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	margin: 20px 20px 0px 0px;
+	position: relative;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+nav ul li a.active {
+	color: blue;
+}
+nav ul li a::after {
+	content: "";
+	height: 3px;
+	border-radius: 5px;
+	width: 0;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	background-color: #04A66D;
+	transition: 0.5s;
+}
+nav ul li a:hover::after {
+	width: 100%;
+}
+.content {
+	margin: 0px 0px 0px 40px;
+}
+.paragraph {
+	box-sizing: border-box;
+	width: 70%;
+}
+/*making the name and email container responsive*/
+.form {
+	float: left;
+	width: 44%;
+}
+.form-container::after {
+	display: table;
+	content: "";
+	clear: both;
+}
+input {
+	outline: none;
+	border: none;
+}
+input[type=text], input[type=email] {
+	width: 80%;
+	padding: 1em 1em 1em ;
+	margin-top: 5px;
+	/*border-radius: 5px;*/
+	border-bottom: 1px solid #000;
+	font-size: 1em;
+	text-align: center;
+}
+textarea {
+	width: 80%;
+	font-size: 1em;
+	margin-top: 5px;
+	padding: 1em;
+	border-radius: 5px;
+	border: 1px solid #000;	
+	resize: none;
+}
+button {
+	float: right;
+	margin-right: 95px;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	padding: 12px 20px;
+	text-align: center;
+	display: inline-block;
+	background-color: #4b6cc1;
+	border-radius: 10px;
+	cursor: pointer; 
+	transition: 0.5s; 
+}
+button:hover {
+	color: blue;
+	font-size: 0.9em;
+	background-color: transparent;
+	border: 1px solid blue;
+}
+
+@media screen and (max-width: 600px) {
+	.form {
+		width: 90%;
+	}
+}

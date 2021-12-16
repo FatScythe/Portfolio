@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+body {
+	margin: 10px 0px 0px 10px;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+::selection {
+	color: #fff;
+	background-color: #000;
+}
+header {
+	height: 100px;
+}
+.info {
+	position: relative;
+	margin: 0px 0px 0px 40px;
+	padding: 0;
+}
+img[src*="Fahm.jpg"] {
+	width: 120px;
+	height: 130px;
+	border-radius: 50%;
+}
+h2 {
+
+}
+h2::after {
+	content: "";
+	position: absolute;
+	height: 8px;
+	width: 5%;
+	border-radius: 4px;
+	background-color: #04A66D;
+	bottom: -15px;
+	left: 0;
+}
+.navmenu {
+	margin: 0;
+	/*float: left;*/
+}
+nav ul li {
+	list-style: none;
+	float: left;
+	margin: 20px 20px 0px 0px;
+	position: relative;
+}
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+nav ul li a::after {
+	content: "";
+	height: 3px;
+	border-radius: 5px;
+	width: 0;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	background-color: #4b6cc1;
+	transition: 0.5s;
+}
+nav ul li a:hover::after {
+	width: 100%;
+}
+header {
+	margin-bottom: 100px;
+}
+span {
+	font-family: sans-serif;
+}
+.happy {
+	font-size: 2em;
+}
+.mouth {
+	color: #04A66D;
+}
+.nose {
+	color: #4b6cc1;
+}
+.content {
+	margin: 40px 0px 0px 40px;
+}
+ a.CV {
+	text-decoration: none;
+	color: #fff;
+}
+.CV {
+	border: none;
+	background-color: #4b6cc1;
+	border-radius: 5px;
+	padding: 10px 16px;
+	box-shadow: 5px 5px lightblue;
+	cursor: pointer;
+}
