@@ -4,7 +4,7 @@
 [Portfolio](https://nifty-saha-a048c4.netlify.app/ "Portfolio live site")
 ___
 
-#### Description : This a static website for my portfolio. It contains four webpages, I was challenged to build this.
+#### Description : This a static website for my portfolio. It contains four webpages, I was challenged to build this, as a first project.
 ___
 
 #### What I learned?
